@@ -6,9 +6,11 @@ const store = new VueX.Store({
   state: {
     count: "car"
   },
+  /*mutations：里面一般写改变state状态的方法,此处的方法名,在commit中使用 */
   mutations: {
-    increment(state) {
+    changeCount(state) {
       state.count = "bus";
+      state.addcount="plane"
     }
   }
 });

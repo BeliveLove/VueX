@@ -5,8 +5,8 @@
 export default {
   methods: {
     getstore () {
-      console.log(this);
-      console.log(this.$store.state.count);
+      console.log("getStore");
+      console.log(this.$store.state);
     }
   },
 }
